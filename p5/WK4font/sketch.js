@@ -1,4 +1,5 @@
 var roboto ;
+var x = 0 ;
 
 function setup() {
   // put setup code here
@@ -11,5 +12,9 @@ function draw() {
   background(100)
   textFont(roboto, 24) ;
 fill(255,0,0) ;
-  text("hello world", 20,50) ;
+  text("hello world", x,50) ;
+  x++ ;
+  if (x > width) {
+    x = 0 ;
+  }
 }

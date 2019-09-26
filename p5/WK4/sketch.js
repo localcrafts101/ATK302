@@ -8,5 +8,6 @@ function setup() {
 
 function draw() {
   // put drawing code here
-  image(img, 10, 10);
+  background(200,200);
+  image(10, 10);
 }
