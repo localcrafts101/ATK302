@@ -28,7 +28,7 @@ function draw() {
       }
 
       textSize(18);
-      text("Click anyhere.Www Your volume must not be <3 ----- " + vol, 80, 400);
+      text("Click anyhere.Www ur volume must not be <3 ----- " + vol, 80, 400);
       rect()
       break;
 
