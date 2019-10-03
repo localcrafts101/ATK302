@@ -20,8 +20,7 @@ function draw() {
       vol = mic.getLevel(); // level is between 0 and 1
       vol = vol * 100; // you may need to change this
 
-      if (vol > 5) {
-        // do something
+      if (vol >= 3) {
         y++;
       }
       if (y > 1080) {
@@ -29,19 +28,25 @@ function draw() {
       }
 
       textSize(18);
-      text("Click the screen first.  My volume is " + vol, 80, 400);
+      text("Click anyhere.Www Your volume must not be <3 ----- " + vol, 80, 400);
+      rect()
       break;
 
     case 1:
       background(0, 255, 0)
+      textSize(24);
+      text("Hi, I'm writing this to see if it works", 200,500)
       break;
 
     case 2:
       background(0, 255, 100)
+      textSize(36)
+      text("Now that I know it works, let me begin. Why don't I try to use HTML with the JavaScript? IT could take more time thatn two days allows.")
       break;
 
     case 3:
       background(100, 255, 0)
+      text("the most important aspect is sustainability, it is a balance that keeps things ")
       break;
 
     case 4:
