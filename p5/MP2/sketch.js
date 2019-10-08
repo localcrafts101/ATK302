@@ -2,10 +2,11 @@ var mic;
 var vol;
 var y = 0;
 var myState = 0;
+var = img;
 
 function setup() {
   createCanvas(1920, 1080);
-
+  img = loadImage("assets/a60.png")
   mic = new p5.AudioIn();
   mic.start();
 }
@@ -35,7 +36,7 @@ function draw() {
     case 1:
       background(0, 255, 0)
       textSize(24);
-      text("Hi, I'm writing this to see if it works", 200,500)
+      text("Hi, I'm writing this to see if it works", 200, 500)
       break;
 
     case 2:
