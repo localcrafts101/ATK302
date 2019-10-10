@@ -1,12 +1,21 @@
 var mic;
 var vol;
 var y = 0;
+var myTimer = 0
 var myState = 0;
-var = img;
+var img1;
+var img2;
+var img3;
+var img4;
+var img5;
+
+function preload(){
+  img1 = loadImage("assets/pic3.jpg")
+}
 
 function setup() {
   createCanvas(1920, 1080);
-  img = loadImage("assets/a60.png")
+  img1 = loadImage("assets/pic3.jpg")
   mic = new p5.AudioIn();
   mic.start();
 }
@@ -29,25 +38,29 @@ function draw() {
       }
 
       textSize(18);
-      text("Click anyhere.Www ur volume must not be <3 ----- " + vol, 80, 400);
-      rect()
+      text("Www ur volume must not be <3 ----- " + vol, 80, 400);
+      fill(25,255,45);
+      myTimer++ ;
+      if (myTimer >=200) {
+        myTimer = 0 ;
+        myState = 1;
+      }
       break;
 
     case 1:
       background(0, 255, 0)
       textSize(24);
-      text("Hi, I'm writing this to see if it works", 200, 500)
+      image(img1, 50,50);
+      text(" 'green' screens", 200, 500)
       break;
 
     case 2:
       background(0, 255, 100)
       textSize(36)
-      text("Now that I know it works, let me begin. Why don't I try to use HTML with the JavaScript? IT could take more time thatn two days allows.")
       break;
 
     case 3:
       background(100, 255, 0)
-      text("the most important aspect is sustainability, it is a balance that keeps things ")
       break;
 
     case 4:
