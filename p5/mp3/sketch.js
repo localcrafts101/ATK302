@@ -40,7 +40,7 @@ function draw() {
 
     case 0: // splash screen
       // welcome to my game, click to start
-      background('red');
+      background(0,45,255);
       fill('white');
       text("welcome to my game! click!", 100, 100);
       text("YAY", 100, 200);
@@ -56,7 +56,7 @@ function draw() {
       break;
 
     case 2: // the win state
-      background('green');
+      background(45,255,255);
       loadImage('assets/page1.jpg', img1 => {
     image(img1, 150, 200);
   });
