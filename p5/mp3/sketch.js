@@ -57,6 +57,7 @@ function draw() {
 
     case 2: // the win state
       background(45,255,255);
+      //intentional glitch in the image command
       loadImage('assets/page1.jpg', img1 => {
     image(img1, 150, 200);
   });
@@ -66,6 +67,7 @@ function draw() {
 
     case 3: // the lose state
       background('blue');
+      //intentional glitch in the image command
       loadImage('assets/page2.jpg', img2 => {
     image(img2, 150, 200);
   });
